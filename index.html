@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Onichan ~~</title>
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="html, thanhdieu, wsteam, wusteam, profile, code" />
+    <meta name="description" content="Hiện tại tôi vẫn còn độc thân, vẫn đang tìm bạn gái" />
+    <meta name="robots" content="noodp" />
+    <script src="//code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Audiowide|Rowdies|Monomaniac+One|ZCOOL+QingKe+HuangYou|Concert One&display=swap');
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        /*text-align:center;
+	*/
+        background-color: #ffffff;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        /*font-family:Arial,sans-serif;*/
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color:none;
+        -webkit-tap-highlight-color: transparent;
+        word-wrap: break-word !important;
+        cursor: url('//thanhdieu.com/files/currso/001.cur'), pointer;
+      }
+
+      ::selection {
+        color: #FFFFFF;
+        background-color: #7E7DBB;
+      }
+
+      ::-moz-selection {
+        color: #FFFFFF;
+        background-color: #7E7DBB;
+      }
+
+      #ws-home {
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        top: 30%;
+      }
+
+      a {
+        cursor: url('//thanhdieu.com/files/currso/1.cur'), pointer;
+      }
+
+      a:focus {
+        outline: none;
+        -moz-outline: none;
+      }
+
+      .snow-container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        top: 0;
+        overflow: hidden;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .snow-container.two {
+        height: 440px;
+      }
+
+      .snow {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        -webkit-animation: snow linear infinite;
+        animation: snow linear infinite;
+      }
+
+      .snow.foreground {
+        background-image: url(//i.imgur.com/OFj62Ft.png);
+        -webkit-animation-duration: 15s;
+        animation-duration: 15s;
+      }
+
+      .snow.foreground.layered {
+        -webkit-animation-delay: 7.5s;
+        animation-delay: 7.5s;
+      }
+
+      .snow.middleground {
+        background-image: url(//i.imgur.com/oXYrwuM.png);
+        -webkit-animation-duration: 20s;
+        animation-duration: 20s;
+      }
+
+      .snow.middleground.layered {
+        -webkit-animation-delay: 10s;
+        animation-delay: 10s;
+      }
+
+      .snow.background {
+        background-image: url(//i.imgur.com/c5W7X0p.png);
+        -webkit-animation-duration: 30s;
+        animation-duration: 30s;
+      }
+
+      .snow.background.layered {
+        -webkit-animation-delay: 15s;
+        animation-delay: 15s;
+      }
+
+      @-webkit-keyframes snow {
+        0% {
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+        }
+
+        100% {
+          -webkit-transform: translate3d(15%, 100%, 0);
+          transform: translate3d(15%, 100%, 0);
+        }
+      }
+
+      @keyframes snow {
+        0% {
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+        }
+
+        100% {
+          -webkit-transform: translate3d(15%, 100%, 0);
+          transform: translate3d(15%, 100%, 0);
+        }
+      }
+
+      @media (max-width: 1366px) {
+        .snow-container {
+          position: absolute;
+          height: 100%;
+        }
+      }
+
+      @media (max-width:1280px) {
+        .snow-container {
+          position: absolute;
+          height: 100%;
+        }
+      }
+
+      @media (max-width:1080px) {
+        .snow-container {
+          position: absolute;
+          height: 100%;
+        }
+      }
+
+      @media (max-width:1054px) {}
+
+      @media (max-width:1024px) {}
+
+      @media (max-width:991px) {
+        .snow-container.two {
+          height: 100%;
+        }
+      }
+
+      @media (max-width:800px) {
+        .snow-container {
+          position: absolute;
+          height: 100%;
+        }
+
+        .snow-container.two {
+          height: 100%;
+        }
+      }
+
+      @media (max-width:768px) {
+        .snow-container {
+          position: absolute;
+          height: 100%;
+        }
+      }
+
+      @media (max-width:640px) {}
+
+      @media (max-width: 480px) {}
+
+      @media (max-width: 414px) {}
+
+      @media (max-width: 384px) {}
+
+  /* .ws-mask {
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:url(https://i.pinimg.com/originals/7b/08/87/7b08871e456a9d8c192f6670b1629e6b.gif) no-repeat right top;
+	background-size: 38%;
+} */
+      .logo {
+        float: left;
+        font-weight: 800;
+      }
+
+      #header {
+        overflow: hidden;
+        /*height:auto*/
+        width: 100%;
+        height: 100%;
+        /* background:url(https://i.pinimg.com/originals/7b/08/87/7b08871e456a9d8c192f6670b1629e6b.gif) no-repeat right bottom;
+	background-size: 30%; */
+        /*background-attachment:fixed;
+	*/
+      }
+
+      .header-1 {
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .ws-icon {
+        margin: 1.7rem 0 1rem 0;
+      }
+
+      .ws-icon-all {
+        font-family: Concert One;
+        margin-right: 0.5rem;
+        text-decoration: none;
+        color: #fff;
+        margin-top: .5rem;
+      }
+
+      .ws-menu {
+        vertical-align: super;
+        padding-left: 5px;
+        font-size: 14px;
+      }
+
+      .ws-icon img {
+        width: 2rem;
+      }
+
+      @media (min-width: 1200px) {
+        #ws-home {
+          width: 1170px;
+        }
+
+        #header {
+          background-size: 20% !important;
+        }
+
+        .ws-mask {
+          background-size: 25% !important;
+        }
+      }
+
+      .ws-2 {
+        font-family: Audiowide;
+        color: #fff;
+        text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, .7);
+        font-size: 1rem;
+      }
+
+      .ws-img img {
+        border-radius: 50%;
+        border: 1px solid #ddd;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        padding: 2px;
+      }
+
+      .home-heading {
+        font-family: Rowdies;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 1rem;
+        margin-top: .5rem;
+        text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, .7);
+        letter-spacing: .2rem;
+      }
+
+      .background-ws {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+      }
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+    <!-- <div class="snow-container"><div class="snow foreground"></div><div class="snow foreground layered"></div><div class="snow middleground"></div><div class="snow middleground layered"></div><div class="snow background"></div><div class="snow background layered"></div></div> -->
+    <div class="background-ws">
+      <video autoplay muted loop playsinline>
+        <source src="//files.catbox.moe/92ojad.mp4" type="video/mp4">
+      </video>
+    </div>    
+    <div id="header">
+      <div class="ws-mask"></div>
+      <div id="ws-home">
+        <span class="ws-img">
+          <img src="//i.ibb.co/YQSyfrW/64475d14572c429d00cbb967ae028d430403010000009cbd00000000020100b6.jpg" alt="Vương Thanh Diệu">
+        </span>
+        <h2 class="home-heading" id="fireText">Vương Thanh Diệu</h2>
+        <span class="ws-2 slogan" id="type-bio">There is a gap between things and expectations. Please don’t</span>
+        <span class="ws-2 delete"></span>
+        <div class="ws-icon">
+          <a class="ws-icon-all" href="" target="_blank">
+            <svg height="30px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <circle cx="24" cy="24" r="20" fill="#3B5998"></circle>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.315 16.9578C28.6917 16.8331 27.8498 16.74 27.3204 16.74C25.8867 16.74 25.7936 17.3633 25.7936 18.3607V20.1361H29.3774L29.065 23.8137H25.7936V35H21.3063V23.8137H19V20.1361H21.3063V17.8613C21.3063 14.7453 22.7708 13 26.4477 13C27.7252 13 28.6602 13.187 29.8753 13.4363L29.315 16.9578Z" fill="white"></path>
+              </g>
+            </svg>
+            <span class="ws-menu">FACEBOOK</span>
+          </a>
+          <a class="ws-icon-all" href="" target="_blank">
+            <svg height="25px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z" fill="#40B3E0"></path>
+                  <path d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308" fill="#FFFFFF"></path>
+                  <path d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475" fill="#D2E5F1"></path>
+                  <path d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624" fill="#B5CFE4"></path>
+                </g>
+              </g>
+            </svg>
+            <span class="ws-menu">TELEGRAM</span>
+          </a>
+          <a class="ws-icon-all" href="" target="_blank">
+            <svg height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2004 12.3984C14.5504 12.3984 12.4004 14.5484 12.4004 17.1984C12.4004 18.0984 12.6504 18.9484 13.1004 19.6684C13.9304 21.0584 15.4504 21.9984 17.2004 21.9984C18.9504 21.9984 20.4804 21.0584 21.3004 19.6684C21.7404 18.9484 22.0004 18.0984 22.0004 17.1984C22.0004 14.5484 19.8504 12.3984 17.2004 12.3984ZM19.5804 16.5684L17.0204 18.9284C16.8804 19.0584 16.6904 19.1284 16.5104 19.1284C16.3204 19.1284 16.1304 19.0584 15.9804 18.9084L14.8004 17.7284C14.5104 17.4384 14.5104 16.9584 14.8004 16.6684C15.0904 16.3784 15.5704 16.3784 15.8604 16.6684L16.5304 17.3384L18.5604 15.4584C18.8604 15.1784 19.3404 15.1984 19.6204 15.4984C19.9004 15.8084 19.8804 16.2884 19.5804 16.5684Z" fill="#ff0000"></path> <path d="M22 8.73062C22 9.92062 21.81 11.0206 21.48 12.0406C21.42 12.2506 21.17 12.3106 20.99 12.1806C19.9 11.3706 18.57 10.9406 17.2 10.9406C13.73 10.9406 10.9 13.7706 10.9 17.2406C10.9 18.3206 11.18 19.3806 11.71 20.3206C11.87 20.6006 11.68 20.9606 11.38 20.8506C8.97 20.0306 4.1 17.0406 2.52 12.0406C2.19 11.0206 2 9.92062 2 8.73062C2 5.64062 4.49 3.14063 7.56 3.14063C9.37 3.14063 10.99 4.02062 12 5.37062C13.01 4.02062 14.63 3.14063 16.44 3.14063C19.51 3.14062 22 5.64062 22 8.73062Z" fill="#ff0000"></path> </g></svg>
+            <span class="ws-menu">REMEMBER</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="//thanhdieu.com/files/loader-screen.js?v=1" defer></script>
+    <script>
+      $(document).ready(function() {
+        var typed = new Typed('#type-bio', {
+          strings: ["There is a gap between things and expectations. Please don’t", "Currently, I am still single, still looking for a girlfriend.", "I am in the Milky Way and living on Earth."],
+          typeSpeed: 50,
+          backSpeed: 25,
+          startDelay: 500,
+          showCursor: true,
+          cursorChar: '|',
+          loop: true
+        });
+      });
+      // const textElement = document.getElementById('onichan');
+      // const originalText = textElement.innerHTML;
+      // function scrambleText() {
+      //   let scrambledText = '';
+      //   for (let i = 0; i < originalText.length; i++) {
+      //     if (Math.random() < 0.5) {
+      //       scrambledText += String.fromCharCode(Math.random() * 94 + 33);
+      //     } else {
+      //       scrambledText += originalText[i];
+      //     }
+      //   }
+      //   scrambledText = scrambledText.substring(0, originalText.length);
+      //   textElement.innerHTML = scrambledText;
+      // }
+      // setInterval(scrambleText, 50);
+      var stop, staticx;
+      var img = new Image();
+      sakura = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUgAAAEwCAYAAADVZeifAAAACXBIWXMAAACYAAAAmAGiyIKYAAAHG2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBSaWdodHM9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9yaWdodHMvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6NDFDMjQxQjYyNjIwNjgxMTgwODNEMjE2MDAzOTU1NDQiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozNDVjOWViOC04NDc4LTFkNDctOGRjMi0yZDkyOGNhYTYxZWQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6YjAzN2ZiMGItNTU5Mi0xYjRkLWJjZGQtOWU4NGExMDJiMGM2IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE4LTA1LTA5VDE0OjQ5OjM3KzA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOC0wNS0wOVQxNDo1MToyNSswODowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOC0wNS0wOVQxNDo1MToyNSswODowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjEyMjVlZWE3LTEyY2QtMTY0NC04ZDAzLWFjOTE2ZTAxZDQ1YyIgc3RSZWY6ZG9jdW1lbnRJRD0idXVpZDoxRDIwNUFGNjZCRDlFNTExOUM5REMwMzg2RjlEQjFGNyIvPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDphYmMzNjIzMy1hOWNkLWNiNDQtODViYi0zZTgyMjEwYmIxMjYiIHN0RXZ0OndoZW49IjIwMTgtMDUtMDlUMTQ6NTE6MjUrMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YjAzN2ZiMGItNTU5Mi0xYjRkLWJjZGQtOWU4NGExMDJiMGM2IiBzdEV2dDp3aGVuPSIyMDE4LTA1LTA5VDE0OjUxOjI1KzA4OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2Vx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
